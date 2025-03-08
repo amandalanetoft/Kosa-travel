@@ -1,0 +1,115 @@
+.kosa-container img {
+    max-height: 50vh; /* Sätter maxhöjden för bilden till 50% av vyhöjden */
+    width: 100%; 
+    object-fit: cover; /* Beskär bilden för att täcka hela utrymmet utan att den förvrängs */
+    object-position: center bottom; /* Placering av bilden centreras horisontellt och hamnar längst ned vertikalt för att få rätt del av bilden att visas */
+}
+
+.text-overlay { /* Styr hur texten positioneras över kosa-container */
+    position: absolute; 
+    top: 45%; 
+    left: 11%; 
+    text-align: center; 
+    z-index: 1; 
+}
+
+.text-overlay h2 { /* Styr utseende på rubriken i text-overlay */
+    font-size: 2.5em; 
+    margin-bottom: 10px; 
+    color: white; 
+}
+
+#section2 { /* Styr egenskaper för section 2 */
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.text-container .text-block {
+    margin: 40px; /* Ger utrymme runt textblocket */
+    font-size: 1.2em; /* Justerar textstorleken */
+    line-height: 1.5; /* Anger radavståndet */
+}
+
+.grid-container-1 {
+    display: grid; /* Använder grid-layout för att placera innehållet i kolumner */
+    grid-template-columns: 1fr 1fr 1fr; /* Delar upp innehållet i tre lika breda kolumner */
+    gap: 20px; /* Anger avståndet mellan grid-elementen */
+    margin: 40px; /* Ger utrymme runt grid-container 1 */
+}
+
+.grid-container-2 {/* Styr grid-container-2 enligt ovan */
+    display: grid; 
+    grid-template-columns: 1fr 1.5fr; 
+    gap: 10px; 
+    margin: 40px; 
+}
+
+.grid-item.text-block {
+    position: relative; /* Positionerar elementet relativt i förhållande till sitt normala läge i flödet */
+    background-color: #049dd9; /* Bakgrundsfärg för textblocket */
+    opacity: 80%; /* Anger opaciteten för textblocket */
+    color: white; /* Textfärgen för textblocket */
+    padding: 20px; /* Lägger till utrymme runt texten */
+    font-size: 1.2em; /* Anger textstorleken */
+    line-height: 1.5; /* Anger radavståndet */
+}
+
+.grid-item h4 { /* Styr utseende på rubriken i grid-item */
+    font-family: mostra-nuova, sans-serif; 
+    font-style: normal; 
+    font-weight: 200; 
+    font-size: 2em; 
+    display: inline; 
+    color: #fff; 
+}
+
+.grid-item .text-block button {/* Styr utseende på knappen i grid-item */
+    position: absolute; 
+    bottom: 0; 
+    margin-top: 10px;
+    margin-bottom: 20px; 
+}
+
+.grid-item img {/* Styr utseende på bilden i grid-item */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    object-position: center; 
+}
+
+@media only screen and (max-width: 840px) { /* appliceras när skärmens maximala bredd är 840 pixlar eller mindre */
+    .text-overlay {
+        position: absolute; 
+        top: 40%; 
+        left: 7%; 
+        text-align: center; 
+        z-index: 1; 
+    }
+}
+
+@media only screen and (max-width: 768px) {/* appliceras när skärmens maximala bredd är 768 pixlar eller mindre */
+    .grid-container-1,
+    .grid-container-2 {
+        grid-template-columns: 1fr; /* Ändra till en kolumnlayout */
+        margin-left: 0px; /* Tar bort marginalen till vänster */
+        margin-right: 0px; /* Tar bort marginalen till höger */
+        margin-bottom: 10px; /* Ger extra utrymme under containern */
+    }
+}
+
+@media screen and (max-width: 480px) {/* appliceras när skärmens maximala bredd är 480 pixlar eller mindre */
+    .text-overlay {
+        position: absolute; 
+        top: 25%; 
+        left: 12%; 
+        text-align: center; 
+        z-index: 1; 
+    }
+    .grid-container-1,
+    .grid-container-2 {
+        grid-template-columns: 1fr; 
+        margin-left: 0px; 
+        margin-right: 0px; 
+        margin-bottom: 10px; 
+    }
+}

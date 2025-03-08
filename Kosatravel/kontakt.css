@@ -1,0 +1,66 @@
+h1 {
+    color: #161C8C;
+    text-align: center;
+}
+
+#kontakt {
+    width: 50rem; /*Sätter bredden på formen*/
+    margin: auto; /*placerar formen i mitten*/
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem 0; /*sätter padding till 0.5 top & bottom, 0 på sidorna*/
+    margin-bottom: 5%;
+}   
+#kontakt ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 3rem auto;
+}
+#kontakt li {
+    width: 45%;
+    height: 10%;
+}
+label {
+    margin-bottom: 0.5rem;
+    display: block;
+}
+input, textarea, select { 
+    width: 90%;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    border: 1px solid #161C8C;
+    padding: 0.25rem;
+}
+textarea {
+    resize: vertical; /*textarean kan endast växa nedåt*/
+}
+#checkbox {
+    width: 5%;
+    float: left;
+}
+#skicka {
+        display: block;
+        font: inherit;
+        background-color: #161C8C;
+        color: white;
+        border: 1px solid #161C8C;
+        padding: 0.5rem 1.5rem;
+        border-radius: 4px;
+        cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    #kontakt {
+        width: 100%;
+    }
+    #kontakt ul {
+        flex-direction: column;
+    }
+    #kontakt li {
+        width: 95%
+    }
+    input, textarea, select { 
+        width: 95%;
+    }
+}

@@ -1,0 +1,44 @@
+h2 {
+    font-family: mostra-nuova, sans-serif; /* Typsnitt */
+    font-style: normal; /* Normal stil */
+    font-weight: 200;
+    font-size: 2em;
+    display: inline; 
+    color:  #161C8C; /* Färgen på texten */
+}
+
+.inför-resan {
+    width: 50rem; /* Anger bredden */
+    margin: auto; /* Vänster till höger */
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem 0; 
+    margin-bottom: 5%; /* Anger bottenmarginalen */
+}   
+.inför-resan ul {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: disc; /* stil för punktlistan */
+    margin: 2rem auto; /* Textens mellanrum*/
+    
+}
+.inför-resan li {
+    width: 100%;
+    height: 10%;
+    margin: 1rem auto;
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    .inför-resan {
+        width: 100%;
+    }
+    .inför-resan ul {
+        flex-direction: column;
+    }
+    .inför-resan li {
+        width: 95%
+    }
+    
+}

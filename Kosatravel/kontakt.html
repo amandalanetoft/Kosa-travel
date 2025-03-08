@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KosaTravel</title>
+    <link rel="stylesheet" href="https://use.typekit.net/wrc6raf.css">
+    <link rel="stylesheet" href="kontakt.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/kosasymbol.png" alt="Kosa Logo"></a><H1>Kosa Travel</H1> 
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="amanda.html">Resmål</a></li>
+                <li><a href="Evelina.html">Inför din resa</a></li>
+                <li><a href="anna.html">Om Kosa</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <label for="menu-toggle" class="burger-menu">&#9776;</label>
+        </nav>
+    </header>
+    <h2>Kontaktformulär</h2>
+  <form id="kontakt">
+  <ul>
+    <li>
+      <label for="resemal">Resemål:</label>
+      <select id="resemal" name="resemal">
+        <option placeholder="resemål">Välj resa</option>
+        <option value="dinara">Dinara</option>
+        <option value="biokovo">Biokovo</option>
+        <option value="velebit">Velebit</option>
+      </select>
+    </li>
+    <li>
+      <label for="datum">Datum:</label>
+      <select id="datum" name="datum">
+        <option placeholder="väljdag">Välj dag</option>
+        <option value="2024-07-01">1 Juli 2024</option>
+        <option value="2024-07-08">8 Juli 2024</option>
+        <option value="2024-07-15">15 Juli 2024</option>
+      </select>
+    </li>
+    <li>
+      <label for="question">Min fråga gäller:</label>
+      <select id="question" name="question">
+        <option placeholder="Välj ämne">Välj ämne</option>
+        <option value="pris">Pris</option>
+        <option value="bokning">Bokning</option>
+        <option value="betalning">Betalning</option>
+        <option value="övrigt">Övrigt</option>
+      </select>
+    </li>
+    <li>
+      <label for="firstname">Förnamn:</label>
+      <input id="firstname" name="firstname" type="text" placeholder="t.ex. Lena" required aria-required="true"
+      />
+    </li>
+    <li>
+      <label for="lastname">Efternamn:</label>
+      <input id="lastname" name="lastname" type="text" placeholder="t.ex. Larsson" required aria-required="true"
+      />
+    </li>
+    <li>
+      <label for="telefon">Mobiltelefon:</label>
+      <input id="phone" name="phone" type="tel" placeholder="t.ex. 0769871323" required aria-required="true"
+      />
+    </li>
+    <li>
+      <label for="email">Email:</label>
+      <input id="email" name="email" type="email" required aria-required="true"
+       />
+    </li>
+    <li>
+      <label for="ovrigInfo">Övrig information:</label>
+      <textarea id="ovrigInfo" name="ovrigInfo" placeholder="Skriv ditt meddelande här..."></textarea>
+    </li>
+    <li>
+      <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" required/>
+      <label for="checkbox">Jag samtycker till användningen av mina personuppgifter.</label> 
+    </li>
+    <li>
+      <button id="skicka" type="submit">Skicka</button>
+    </li>
+  </ul>
+  </form>
+  <footer>
+    <div class="footer-column">
+        <h3>Om Oss</h3>
+        <a href="anna.html">Om Kosa Travel</a>
+        <a href="#">Hållbarhet</a>
+        <a href="#">Samarbetspartners</a>
+    </div>
+    <div class="footer-column">
+        <h3>Att resa med oss</h3>
+        <a href="#">Resevillkor</a>
+        <a href="#">Reseförsäkringar</a>
+        <a href="#">Biljetter och betalning</a>
+    </div>
+    <div class="footer-column">
+        <h3>Kundservice</h3>
+        <a href="kontakt.html">Kontakta oss</a>
+        <a href="#">Frågor och svar</a>
+        <a href="Evelina.html">Inför din resa</a>
+    </div>
+    <div class="footer-column">
+        <h3>Nyhetsbrev</h3>
+        <p>Prenumerera på härliga tips, bra erbjudanden och inspiration via e-post?</p>
+        <form>
+            <input type="email" placeholder="Ange din e-post">
+            <button type="submit">Prenumerera</button>
+        </form>
+    </div>
+  </footer>  
+</body>
+</html>
